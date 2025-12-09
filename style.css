@@ -1,0 +1,127 @@
+﻿.chef_img {
+    height: 200px;
+    width: 200px;
+    background-image: url("img/logo.png");
+    background-size: cover;
+    display: flex;
+    align-self: end;
+    margin: 20px;
+}
+.container {
+    width: 90%;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+#head {
+    font-size: 50px;
+    color: deepskyblue;
+    padding: 30px;
+}
+.nav_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+}
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.link {
+    list-style-type: none;
+    margin: 0px 50px 0px 50px;
+    font-size: 20px;
+}
+.father_list {
+    display: flex;
+}
+
+.link a:hover {
+    color: deepskyblue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+header{
+    background-color: black;
+}
+.footer_logo {
+    height: 200px;
+    width: 200px;
+    background-image: url("img/logo.png");
+    background-size: cover;
+    display: flex;
+    align-self: end;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+a {
+    color: white;
+    font-size: 21px;
+}
+
+.footer_links {
+    color: red;
+}
+footer {
+    background-color: black;
+}
+#list{
+    padding: 50px;
+}
+.list1 {
+    margin: 0px 50px 0px 50px;
+    font-size: 20px;
+}
+.list1 a:hover {
+    color: deepskyblue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.insta_img {
+    width: 80px;
+    display: block;
+    border-radius: 20px;
+    }
+.tiktok_img {
+    width: 80px;
+    display: block;
+}
+.facebook_img {
+    width: 80px;
+    display: block;
+}
+#main_div {
+    height: 100px;
+}
+.end_of_footer {
+    font-size: 40px;
+    color: deepskyblue;
+    text-align: center;
+    padding: 10px;
+    background-color: black
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 120vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
