@@ -1,7 +1,13 @@
-﻿.chef_img {
+﻿body {
+    background-color: cadetblue;
+}
+header{
+    border-radius: 200px;
+}
+.chef_img {
     height: 200px;
     width: 200px;
-    background-image: url("img/logo.png");
+   
     background-size: cover;
     display: flex;
     align-self: end;
@@ -17,7 +23,7 @@
     color: deepskyblue;
     padding: 30px;
 }
-.nav_header {
+.div_header {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -48,7 +54,6 @@ header{
 .footer_logo {
     height: 200px;
     width: 200px;
-    background-image: url("img/logo.png");
     background-size: cover;
     display: flex;
     align-self: end;
@@ -83,18 +88,24 @@ footer {
     text-decoration: underline;
     font-weight: bold;
 }
-.insta_img {
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+.social_img {
+    transition: transform 0.3s ease;
+}
+/*עזרה מהצאט*/
+.social_img:hover {
+    transform: translateY(-10px) rotate(-3deg);
+    box-shadow: 0 0 50px rgba(139, 0, 0, 0.8), inset 0 0 50px rgba(255, 0, 0, 0.15);
+}
+.social_img {
     width: 80px;
     display: block;
     border-radius: 20px;
-    }
-.tiktok_img {
-    width: 80px;
-    display: block;
-}
-.facebook_img {
-    width: 80px;
-    display: block;
 }
 #main_div {
     height: 100px;
