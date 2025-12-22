@@ -13,11 +13,6 @@ header{
     align-self: end;
     margin: 20px;
 }
-.container {
-    width: 90%;
-    max-width: 2000px;
-    margin: 0 auto;
-}
 #head {
     font-size: 50px;
     color: deepskyblue;
@@ -65,11 +60,14 @@ header{
     justify-content: space-between;
     padding: 20px;
 }
-a {
+footer a{
     color: white;
     font-size: 21px;
 }
-
+header a {
+    color: white;
+    font-size: 21px;
+}
 .footer_links {
     color: red;
 }
@@ -148,9 +146,9 @@ footer {
 .card_wrap {
     gap: 150px;
 }
-    .card:hover {
-        transform: translateY(-10px) scale(1.2);
-    }
+.card:hover {
+    transform: translateY(-10px) scale(1.2);
+}
 
 .container {
     width: 90%;
@@ -225,4 +223,49 @@ footer {
 .like-btn:hover{
     transform: scale(1.2);
     filter: drop-shadow(0 0 5px red) drop-shadow(0 0 5px blue);
+}
+.services_wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 50px 0px;
+}
+.services_items {
+    background-color: gray;
+    border: 1px solid;
+    border-radius: 20px;
+    width: calc(100% / 3 - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.services_items p {
+    text-align: center;
+}
+.services_items:hover {
+    transform: translateY(-10px) scale(1.09);
+}
+.services_items a{
+    text-decoration: none;  
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.service_footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 350px;
+}
+.like {
+    border: none;
+    background: none;
+    font-size: 14px;
+    transition: transform 0.5s ease;
+}
+/*עזרה מהצאט*/
+.like:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5px black) drop-shadow(0 0 5px red);
 }
