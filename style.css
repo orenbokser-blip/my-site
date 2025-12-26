@@ -247,9 +247,10 @@ footer {
 .services_items p {
     text-align: center;
 }
-.services_items:hover {
-    transform: translateY(-10px) scale(1.09);
-}
+    .services_items:hover {
+        transform: translateY(-10px) scale(1.09);
+        filter: drop-shadow(0 0 5px aqua) drop-shadow(0 0 10px blue);
+    }
 .services_items a{
     text-decoration: none;  
     color: black;
@@ -293,6 +294,11 @@ a , p .services_items{
 .border {
     text-align: center;
     border-top: 3px solid aqua;
+}
+.services_wrap {
+    background-color: skyblue;
+    padding: 40px;
+    border-radius: 30px;
 }
 /*עזרה מהצאט*/
 .like:hover {
