@@ -1,23 +1,35 @@
 ﻿body {
-    background-color: cadetblue;
+    background: #170024;
+    background-image: linear-gradient(180deg,rgba(23, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* עזרה מהצאט כדי לעשות את הרקע של האתר יותר יפה */
 }
 header{
     border-radius: 200px;
 }
+
+#head{
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+    /* עזרה מהצאט כדי להפוך את האתר ליותר יפה */
+    padding: 30px;
+}
+
 .chef_img {
     height: 200px;
     width: 200px;
-   
     background-size: cover;
     display: flex;
     align-self: end;
     margin: 20px;
 }
-#head {
-    font-size: 50px;
-    color: deepskyblue;
-    padding: 30px;
-}
+
 .div_header {
     display: flex;
     flex-direction: row;

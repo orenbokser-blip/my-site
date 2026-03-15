@@ -1,5 +1,27 @@
+body {
+    background: #170024;
+    background-image: linear-gradient(180deg,rgba(23, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* עזרה מהצאט כדי לעשות את הרקע של האתר יותר יפה */
+}
+
+#head{
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+    /* עזרה מהצאט כדי להפוך את האתר ליותר יפה */
+}
+
 form {
-    background-color: lightseagreen;
+    background: #aed5ee;
+    background: radial-gradient(circle,rgba(174, 213, 238, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    /* עזרה מהצאט כדי להפוך את הרקע ליותר יפה */
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 15px aqua, 0 0 30px aqua;
