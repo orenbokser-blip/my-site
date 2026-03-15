@@ -27,8 +27,8 @@ form.addEventListener("click", function(e) {
         document.querySelector("#email").style.border = "2px solid black"
     }
 
-    if(age > 120 || age < 0){
-        alert("הגיל לא יכול להיות קטן מ0 או יותר גדול מ120")
+    if(age > 120 || age < 1){
+        alert("הגיל לא יכול להיות קטן מ1 או יותר גדול מ120")
         document.querySelector("#age").style.border = "2px solid red"
         return
     }
@@ -55,6 +55,7 @@ form.addEventListener("click", function(e) {
         document.querySelector("#message").style.border = "2px solid black"
     }
 
+    alert("נשלח")
     console.log(username)
     console.log(email)    
     console.log(age)
