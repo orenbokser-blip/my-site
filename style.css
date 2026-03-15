@@ -41,6 +41,7 @@ header{
 .link a:hover {
     color: deepskyblue;
     text-decoration: underline;
+    font-weight: bold;
 }
 header{
     background-color: black;
@@ -83,6 +84,7 @@ footer {
 .list1 a:hover {
     color: deepskyblue;
     text-decoration: underline;
+    font-weight: bold;
 }
 .social {
     display: flex;
@@ -225,6 +227,9 @@ footer {
 }
 .services_wrap {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 10px;
     margin: 50px 0px;
 }
@@ -232,15 +237,22 @@ footer {
     background-color: white;
     border: 4px solid aqua;
     border-radius: 20px;
-    width: calc(100% / 3 - 20px);
+    width: calc(100% / 3 - 10px);
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: 0.3s ease;
     gap: 5px;
 }
+.border h1,h3{
+    color: pink;
+}
 .services_items p {
     text-align: center;
+    /* עזרה מהצאט כדי לעשות את הטקסט יפה */
+    background: linear-gradient(135deg, #6366f1, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
     .services_items:hover {
         transform: translateY(-10px) scale(1.09);
@@ -263,6 +275,16 @@ footer {
     font-size: 14px;
     transition: transform 0.5s ease;
 }
+.upper_service {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.lower_service {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 a , p .services_items{
     padding: 10px;
 }
@@ -284,28 +306,9 @@ a , p .services_items{
     background-color: skyblue;
     padding: 40px;
     border-radius: 30px;
-    flex-wrap: wrap;
 }
 /*עזרה מהצאט*/
 .like:hover {
     transform: scale(1.2);
     filter: drop-shadow(0 0 5px black) drop-shadow(0 0 5px red);
-}
-
-
-@media only screen and (max-width: 1000px) {
-    .services_items {
-        width: 43%;
-    }
-    .card {
-        width: 43%;
-    }
-    .card_wrap{
-        flex-wrap:wrap;
-    }
-}
-@media only screen and (max-width: 800px) {
-    .services_items {
-        width: 100%;
-    }
 }

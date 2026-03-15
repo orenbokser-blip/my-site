@@ -1,0 +1,183 @@
+form {
+    background-color: lightseagreen;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px aqua, 0 0 30px aqua;
+    width: 300px;
+    text-align: center;
+    border: 2px solid black;
+    margin: 20px;
+}
+
+form button:hover {
+    background-color: lightgray;
+    color: black;
+    box-shadow: 0 4px 10px black;
+}
+
+#age , #email , #username , #tel {
+    background-color: lightblue;
+    border: 2px solid black;
+    width: 90%;
+    height: 30px;
+}
+
+#message{
+    width: 90%;
+    border: 2px;
+    border: 2px solid black;
+    background-color: lightblue;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    height: 90px;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+.container {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* התחלה של header */
+header{
+    background-color: black;
+    border-radius: 200px;
+}
+
+header a {
+    color: white;
+    font-size: 21px;
+}
+
+.div_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+#head {
+    font-size: 50px;
+    color: deepskyblue;
+    padding: 30px;
+}
+
+.chef_img {
+    height: 200px;
+    width: 200px;
+   
+    background-size: cover;
+    display: flex;
+    align-self: end;
+    margin: 20px;
+}
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.link {
+    list-style-type: none;
+    margin: 0px 50px 0px 50px;
+    font-size: 20px;
+}
+
+.link a:hover {
+    color: deepskyblue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* סיום של header */
+/* התחלה של פוטר */
+.footer_logo {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    display: flex;
+    align-self: end;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer a{
+    color: white;
+    font-size: 21px;
+}
+
+.footer_links {
+    color: red;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+}
+
+#list{
+    padding: 50px;
+}
+.list1 {
+    margin: 0px 50px 0px 50px;
+    font-size: 20px;
+}
+.list1 a:hover {
+    color: deepskyblue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+.social_img {
+    transition: transform 0.3s ease;
+}
+/*עזרה מהצאט*/
+.social_img:hover {
+    transform: translateY(-10px) rotate(-3deg);
+    box-shadow: 0 0 50px aqua, inset 0 0 50px rgba(255, 0, 0, 0.15);
+}
+.social_img {
+    width: 80px;
+    display: block;
+    border-radius: 20px;
+    border: 2px solid aqua;
+}
+
+footer {
+    /* padding: 20px; */
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.end_of_footer {
+    font-size: 40px;
+    color: deepskyblue;
+    text-align: center;
+    padding: 10px;
+    background-color: black
+}
+
+
+
+
