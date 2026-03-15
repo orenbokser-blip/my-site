@@ -11,6 +11,7 @@ form.addEventListener("click", function(e) {
     if(username.length < 3){
         document.querySelector("#username").style.border = "2px solid red"
         alert("השם לא יכול להיות פחות מ3 תווים!")
+        return
     }
     else{
         document.querySelector("#username").style.border = "2px solid black"
@@ -20,6 +21,7 @@ form.addEventListener("click", function(e) {
     if (!emailPattern.test(email)) {
         alert("כתובת אימייל לא חוקית");
         document.querySelector("#email").style.border = "2px solid red"
+        return
     }
     else{
         document.querySelector("#email").style.border = "2px solid black"
@@ -28,6 +30,7 @@ form.addEventListener("click", function(e) {
     if(age > 120 || age < 0){
         alert("הגיל לא יכול להיות קטן מ0 או יותר גדול מ120")
         document.querySelector("#age").style.border = "2px solid red"
+        return
     }
     else{
         document.querySelector("#age").style.border = "2px solid black"
@@ -37,6 +40,7 @@ form.addEventListener("click", function(e) {
     if (!isNum.test(tel) || tel.length < 10){
         alert("מספר טלפון לא תקין!")
         document.querySelector("#tel").style.border = "2px solid red"
+        return
     }
     else{
         document.querySelector("#tel").style.border = "2px solid black"
@@ -45,6 +49,7 @@ form.addEventListener("click", function(e) {
     if(message.length < 10){
         alert("ההודעה לא יכולה להיות פחות מ10 אותיות")
         document.querySelector("#message").style.border = "2px solid red"
+        return
     }
     else{
         document.querySelector("#message").style.border = "2px solid black"
