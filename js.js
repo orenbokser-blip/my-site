@@ -55,10 +55,30 @@ form.addEventListener("click", function(e) {
         document.querySelector("#message").style.border = "2px solid black"
     }
 
-    alert("נשלח")
-    console.log(username)
-    console.log(email)    
-    console.log(age)
-    console.log(tel)
-    console.log(message)
+    fetch("http://localhost:3000/post", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ 
+            name: username, 
+            email: email, 
+            age: age, 
+            phonenumber: tel, 
+            message: message 
+        })
+    })
+    .then(res => res.text())
+    .then(data => {
+        console.log(username)
+        console.log(email)    
+        console.log(age)
+        console.log(tel)
+        console.log(message)
+        alert("הנתונים נשלחו בהצלחה! תשובת השרת: " + data);
+    })
+    .catch(err => {
+        console.error("שגיאה בשליחה:", err);
+        alert("קרתה שגיאה בשליחת הנתונים לשרת.");
+    });
 })
